@@ -16,13 +16,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addcommodity.cpp \
+    goodsdelivery.cpp \
+    goodwarehousing.cpp \
     main.cpp \
     mainwidget.cpp
 
 HEADERS += \
+    addcommodity.h \
+    goodsdelivery.h \
+    goodwarehousing.h \
     mainwidget.h
 
 FORMS += \
+    addcommodity.ui \
+    goodsdelivery.ui \
+    goodwarehousing.ui \
     mainwidget.ui
 
 # Default rules for deployment.

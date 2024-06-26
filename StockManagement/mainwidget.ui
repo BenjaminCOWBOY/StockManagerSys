@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>2000</width>
+    <height>1000</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,234 @@
    <iconset resource="images.qrc">
     <normaloff>:/new/prefix1/images/double.png</normaloff>:/new/prefix1/images/double.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTableWidget" name="tableWidget_ListData">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>1971</width>
+     <height>911</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_DataSearch">
+   <property name="geometry">
+    <rect>
+     <x>1897</x>
+     <y>15</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 247, 121);
+border-radius:3px;
+color: rgb(170, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/images/select.png</normaloff>:/new/prefix1/images/select.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_GoodsNumble">
+   <property name="geometry">
+    <rect>
+     <x>1551</x>
+     <y>11</y>
+     <width>311</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1350</x>
+     <y>10</y>
+     <width>201</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(170, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>根据商品编号：</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>45</y>
+     <width>1171</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>16</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_AddGoods">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 249, 62);
+color: rgb(170, 0, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>新增商品</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/new/prefix1/images/update.png</normaloff>:/new/prefix1/images/update.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_DeleteGoods">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 249, 62);
+color: rgb(170, 0, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>删除商品</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/new/prefix1/images/delete.png</normaloff>:/new/prefix1/images/delete.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_GoodsWareHousing">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 249, 62);
+color: rgb(170, 0, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>商品入库</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/new/prefix1/images/input.png</normaloff>:/new/prefix1/images/input.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_GoodsDelivery">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 249, 62);
+color: rgb(170, 0, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>商品出库</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/new/prefix1/images/output.png</normaloff>:/new/prefix1/images/output.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_LoadData">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 249, 62);
+color: rgb(170, 0, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>导出数据</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/new/prefix1/images/open.png</normaloff>:/new/prefix1/images/open.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_DataSummury">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 249, 62);
+color: rgb(170, 0, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>数据汇总</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/new/prefix1/images/logo.png</normaloff>:/new/prefix1/images/logo.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources>
   <include location="images.qrc"/>

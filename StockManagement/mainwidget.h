@@ -9,6 +9,11 @@
 #include<QMessageBox>
 #include<QtDebug>
 
+#include<QTableWidget>
+#include<QTableWidgetItem>
+#include<QString>
+#include<QSqlQuery>
+#include"goodsdelivery.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWidget; }
 QT_END_NAMESPACE
@@ -27,5 +32,19 @@ private:
 public:
     void ConnectMYSQLDBFunc();//连接MySQL数据库
 
+    void TableWidgetListDataFunc();//表格控件格式初始化
+
+    void InitTableWidgetFunc();//表格控件列宽度初始化
+
+
+
+private slots:
+    void on_pushButton_AddGoods_clicked();
+    void on_pushButton_DeleteGoods_clicked();
+    void on_pushButton_GoodsWareHousing_clicked();
+    void on_pushButton_GoodsDelivery_clicked();
+    void on_pushButton_LoadData_clicked();
+    void on_pushButton_DataSummury_clicked();
+    void on_pushButton_DataSearch_clicked();
 };
 #endif // MAINWIDGET_H
